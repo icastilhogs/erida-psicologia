@@ -15,15 +15,15 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Page not found</title>
-        <html lang={lang || 'en'} />
+        <title>Página não encontrada</title>
+        <html lang={lang || 'pt-br'} />
         <meta name="description" content="Page not found" />
       </Helmet>
       <section id="hero" className="jumbotron">
         <Container>
           <Fade bottom duration={1000} delay={500} distance="30px">
             <h1 className="hero-title text-center">
-              Sorry, this path does not exist{' '}
+              Oops, essa página não existe{' '}
               <span role="img" aria-label="emoji">
                 😞
               </span>
