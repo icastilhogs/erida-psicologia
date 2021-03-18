@@ -6,7 +6,7 @@
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $secondary-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -26,9 +26,13 @@
   }
 
   .hero-title {
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
+    margin-right: 38vw;
     text-align: left;
 
     @include respond(tab-land) {

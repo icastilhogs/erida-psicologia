@@ -3,11 +3,10 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+  const { benefits } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -26,9 +25,8 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+          {benefits.map((benefit) => {
+            const { title, info, info2, url, repo, img, id } = benefit;
 
             return (
               <Row key={id}>

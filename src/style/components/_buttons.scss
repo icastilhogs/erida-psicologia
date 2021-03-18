@@ -2,13 +2,15 @@
 .cta-btn {
   display: inline-block;
   position: relative;
-  padding: 0.8rem $default-font-size;
-  font-weight: bold;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  //border-style: none;
   line-height: 1;
+  cursor: pointer;
   z-index: 1;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 
-  &::after {
+  /*   &::after {
     content: '';
     display: block;
     position: absolute;
@@ -18,28 +20,22 @@
     bottom: 0;
     z-index: -1;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-  }
+  } */
 }
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  border-image-slice: 1;
-  cursor: pointer;
+  background-color: $primary-color;
+
   // Responsive Button hero style
   @include respond(phone) {
     background-image: none;
-    border: 2px solid $secondary-color;
+    border: none;
     -webkit-text-fill-color: $secondary-color;
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    // background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
@@ -47,7 +43,7 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    color: $white-color;
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
@@ -60,17 +56,25 @@
   }
 }
 
+.cta-btn--hero a,
+.cta-btn--secondary a {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.15rem;
+}
+
 /* Resume Style */
-.cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
+.cta-btn--secondary {
+  color: $secondary-color;
+  border: none;
 
   &::after {
-    background: $white-color;
+    background: transparent;
   }
 
   &:hover {
-    color: $secondary-color;
+    color: $primary-color;
     text-decoration: none;
 
     &::after {
