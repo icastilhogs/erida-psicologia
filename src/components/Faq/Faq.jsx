@@ -12,19 +12,17 @@ const FAQ = () => {
       <Container>
         <Title title="FAQ (Perguntas Frequentes)" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
-              {faq.map((question) => {
-                const { id, q, a } = question;
-                return (
-                  <div key={id}>
-                    <i />
-                    <h3>{q}</h3>
-                    <p>{a}</p>
-                  </div>
-                );
-              })}
-            </p>
+          <div className="faq-wrapper">
+            {faq.map((question) => {
+              const { id, q, a } = question;
+              return (
+                <div key={id}>
+                  <i />
+                  <h3 className="faq-question">{q}</h3>
+                  <p className="faq-asnwer">{a}</p>
+                </div>
+              );
+            })}
           </div>
         </Fade>
       </Container>

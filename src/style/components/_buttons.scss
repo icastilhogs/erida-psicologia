@@ -4,51 +4,38 @@
   position: relative;
   padding: 1.5rem 3rem;
   border-radius: 3rem;
-  //border-style: none;
   line-height: 1;
   cursor: pointer;
   z-index: 1;
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 
-  /*   &::after {
-    content: '';
+    &::after {
+    content: '';   
     display: block;
     position: absolute;
+    border-radius: 3rem;
     width: 0px;
     height: 100%;
     left: 0;
     bottom: 0;
+    background: transparent;
     z-index: -1;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-  } */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+  }
 }
 
 /* Hero Style */
 .cta-btn--hero {
-  background-color: $primary-color;
-
-  // Responsive Button hero style
-  @include respond(phone) {
-    background-image: none;
-    border: none;
-    -webkit-text-fill-color: $secondary-color;
-  }
+  background: $primary-color;
 
   &::after {
-    // background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-    // Responsive Button hero style
-    @include respond(phone) {
-      background-image: none;
-    }
+    background: $secondary-color;
   }
 
   &:hover {
-    color: $white-color;
+    color: $primary-color;
+    //background: $secondary-color;
     text-decoration: none;
-    // Responsive Button hover hero style
-    @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
-    }
 
     &::after {
       width: 100%;
@@ -62,12 +49,12 @@
   font-weight: 600;
   font-style: italic;
   letter-spacing: 0.15rem;
+  border: none;
 }
 
 /* Resume Style */
 .cta-btn--secondary {
   color: $secondary-color;
-  border: none;
 
   &::after {
     background: transparent;

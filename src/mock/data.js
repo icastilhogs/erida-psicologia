@@ -11,7 +11,8 @@ export const headData = {
 export const heroData = {
   headline: '"Ao tocar uma alma humana, seja apenas outra alma humana"',
   source: '— Carl Gustav Jung',
-  subtitle: 'Psicóloga clínica',
+  subtitle:
+    'Conheça os benefícios da terapia humanista existencial fenomenológica? Marque uma sessão com a psicóloga Érida Bastos Castilho (CRP 05/51653) ou clique em saiba mais.',
   cta: 'marcar sessão',
   cta2: 'saiba mais',
 };
@@ -44,19 +45,17 @@ export const abordagemData = {
 export const benefitsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'benefit01.png',
     title: 'Harmonize seus sentimentos',
     info: '',
-    info2: '',
-    url: '',
+    side: 'right',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'benefit02.png',
     title: 'Não saia de casa',
     info: '',
-    info2: '',
-    url: '',
+    side: 'left',
   },
 ];
 
@@ -91,13 +90,32 @@ export const lifeData = [
 export const faqData = [
   {
     id: nanoid(),
-    q: 'something?',
-    a: 'answer',
+    q: 'Quanto tempo leva a psicoterapia?',
+    a:
+      'Muitos querem saber, logo ao marcarem a primeira sessão, quanto tempo irá durar o tratamento. A duração de um tratamento psicoterapêutico varia consideravelmente dependendo da pessoa e da natureza das questões a serem trabalhadas. É impossível determinar com precisão o tempo necessário para o aparecimento de resultados. Vários fatores podem influenciar nessa linha do tempo como: a natureza do problema em si,  por quanto tempo o problema tem sido um problema (pode ser recente, pode ser de longa duração), do apoio recebido da família e amigos, da dedicação, compromisso e entrega no processo. Na minha prática clínica, a maioria dos pacientes/clientes levaram anos para procurar o tratamento, seja por receio de falarem sobre seu problema e serem julgados, por sentirem vergonha, resistência ao enfrentamento e por falta de recursos financeiros.',
   },
   {
     id: nanoid(),
-    q: 'something?',
-    a: 'answer',
+    q: 'É preciso ter coragem para fazer psicoterapia?',
+    a:
+      'Sim, é preciso ter coragem para enfrentar um processo de psicoterapia, porque  não é nada confortável falar dos traumas, das fraquezas,  das dores, das perdas. No entanto, a pessoa já está em sofrimento e terá um retorno que será bom, proveitoso e produtivo, refazendo sua realidade interna e externa. Contardo Calligaris pontua que: "Uma psicoterapia é uma experiência que transforma, pode-se sair dela sem o sofrimento do qual a gente se queixava inicialmente, mas ao custo de uma mudança. Na saída, não somos os mesmos sem dor, somos outros, diferentes."',
+  },
+  {
+    id: nanoid(),
+    q: 'Quais são as vantagens do atendimento online em relação ao atendimento presencial?',
+    a:
+      'Facilita escolher o profissional com a abordagem de trabalho que você mais se indentifica,  independente da distância; Comodidade, já que você só vai precisar de um celular e uma boa conexão de internet; Redução de gasto de tempo com o deslocamento e de custos indiretos, como: úber, gasolina, estacionamento. Essa modalidade de atendimento já foi  regulamentada pelo Conselho Federal de Psicologia na resolução CFP 011/2018. Vale ressaltar, que o acolhimento e o entrosamento entre psicólogo e paciente, necessários para o vínculo terapêutico, ocorrem nessa modalidade e a psicoterapia transcorre normalmente.',
+  },
+  {
+    id: nanoid(),
+    q: 'O que pode atrapalhar o atendimento online?',
+    a:
+      'Como o atendimento é feito por chamada de vídeo, o que pode atrapalhar é uma internet ruim ou pouca bateria. Outro problema é o paciente não ter um espaço para fazer a chamada com a segurança de poder falar a vontade.',
+  },
+  {
+    id: nanoid(),
+    q: 'Como é feito o pagamento do atendimento online?',
+    a: 'Pagamento psicoterapia online é feita por meio de transferência bancária ou PIX.',
   },
 ];
 
